@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coba.dzatinhimmatialiya_1202154309_modul2.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            app:srcCompat="@drawable/ead" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="Pilih Menu:" />
+
+        <Button
+            android:id="@+id/buttonpesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pesanGr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:text="Pesen Sekarang" />
+
+        <RadioGroup
+            android:id="@+id/pesanGr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp">
+
+            <RadioButton
+                android:id="@+id/radioButtondineit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Dine in" />
+
+            <RadioButton
+                android:id="@+id/radioButtontakeaway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/radioButtondineit"
+                android:layout_alignStart="@+id/radioButtondineit"
+                android:layout_below="@+id/radioButtondineit"
+                android:text="Take Away" />
+        </RadioGroup>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
